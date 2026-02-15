@@ -605,6 +605,7 @@
                                         </div>
                                         <div className="flex items-center gap-3 shrink-0">
                                             {p && <div className="text-center"><p className="text-[7px] font-bold text-slate-400 uppercase tracking-tighter">POSTOP</p><p className="font-bold text-xs leading-none">{p.postOp}</p></div>}
+                                            {p && <div className="text-center bg-emerald-50 px-2 py-1 rounded-lg border border-emerald-100 shadow-sm"><p className="text-[7px] font-bold text-emerald-600 uppercase tracking-tighter">REJİM</p><p className="font-black text-[10px] leading-none text-emerald-800 uppercase italic">{p.rejim || '-'}</p></div>}
                                             {p && <span className={`px-1.5 py-0.5 rounded text-[8px] font-black border ${config.border} ${config.bg} ${config.text} uppercase`}>{p.hoca}</span>}
                                             <div className="flex gap-1">
                                                 <button onClick={(e) => { e.stopPropagation(); openEntryForm(roomNo); }} className="p-1.5 hover:bg-white/50 rounded-lg text-slate-400 hover:text-slate-900 transition-transform active:scale-90"><Icons.Edit3 size={14} /></button>
@@ -749,4 +750,5 @@
         root.render(<App />);
     </script>
 </body>
+
 </html>
